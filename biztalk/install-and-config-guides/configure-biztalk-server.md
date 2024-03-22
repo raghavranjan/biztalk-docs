@@ -97,7 +97,7 @@ When you do a basic configuration, the following occurs:
     - **Join an existing SSO system**: If you are adding a BizTalk Server to an existing group, then select this option. The BizTalk Server shares the same SSO configuration and databases with the other BizTalk Servers in the group.
     - **Data stores**: Enter the server name of your SSO server. If you are on the SSO server, then select the local server name. You can keep **SSODB** as the default database name, or enter something custom.
     - **Windows service**: Enter the account used to run the Enterprise Single Sign-On service. If SQL Server is on another computer, enter the domain account.
-    - **Windows accounts**: You can keep the default group names, or enter something custom. If SQL Server is on another computer, enter the domain accounts.
+    - **Windows accounts**: You can keep the default group names, or enter something custom. If SQL Server is on another computer, enter the domain groups.
 
 3. Select **Enterprise SSO Secret Backup**. This option saves the master secret to an encrypted backup file. 
 4. Configure the following:  
@@ -124,7 +124,7 @@ When using a local SQL Server named instance as data store, use `LocalMachineNam
 
       You can keep the default database names, or enter something custom.
 
-    - **BizTalk Administrative Roles**: You can keep the default group names, or enter something custom. If SQL Server is on another computer, enter the domain accounts.
+    - **BizTalk Administrative Roles**: You can keep the default group names, or enter something custom. If SQL Server is on another computer, enter the domain groups.
 
 ### Configure the BizTalk Runtime
 
@@ -152,7 +152,7 @@ When using a local SQL Server named instance as data store, use `LocalMachineNam
       - **Isolated Host name**: BizTalkServerIsolatedHost is the default. Leave this as-is.
 
     - **Windows service**: Enter the accounts used to run the host instances. If SQL Server is on another computer, enter the domain accounts.
-    - **Windows Groups**: You can keep the default group names, or enter something custom. If SQL Server is on another computer, enter the domain accounts.
+    - **Windows Groups**: You can keep the default group names, or enter something custom. If SQL Server is on another computer, enter the domain groups.
 
 ### Configure Business Rules Engine (BRE)
 
@@ -220,7 +220,7 @@ BAM Alerts service requires SQL_AS_ADOMD client to run. Install SQL Server 2016 
 
     - **Enable the BAM Portal**: If you use the BAM Portal, then thick this option.
     - **Web service accounts**: Enter the accounts used to run the IIS services. If SQL Server is on another computer, enter the domain accounts.
-    - **Windows groups**: You can keep the default group name, or enter something custom. If SQL Server is on another computer, enter the domain account.
+    - **Windows groups**: You can keep the default group name, or enter something custom. If SQL Server is on another computer, enter the domain groups.
     - **BAM Portal Web Site**: Select the Web site to host the BAM Portal. In some environments, the Default Web Site is the only website configured. 
 
 ### Configure BizTalk EDI/AS2 Runtime 
